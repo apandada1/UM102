@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+      <h1>MA 334: Introduction to Homotopy Type theory</h1>
+      <div id="desc" class="section">
+        <h3> Course Description </h3>
+          <p> This course introduces homotopy type theory, which provides alternative foundations for mathematics based on deep connections between <strong>type theory</strong>, from logic  and computer science, and <stong>homotopy theory</strong>, from topology. This connection is based on interpreting <em>types</em> as <em>spaces</em>, <em>terms</em> as <em>points</em> and <em>equalities</em> as <em>paths</em>. Many homotopical notions have type-theoretic counterparts which are very useful for foundations.
+          </p>
+
+          <p>
+             Such foundations are far closer to actual mathematics than the traditional ones based on set theory and logic, and are very well suited for use in computer-based proof systems, especially <em>formal verification systems</em>. We will use the <a href="http://leanprover.github.io/">Lean Theorem Prover</a> in this course. Note that the latest version (Lean 3) doen not support Homotopy Type Theory (yet), so you must use <a href="https://github.com/leanprover/lean2">Lean 2</a>.
+          </p>
+
+      </div>
+
+      <div class="section">
+        <h3> Prerequisites </h3>
+          <p>Basic topology and mathematical maturity will be assumed. Some familiarity with algebraic topology will be  helpful, as will some familiarity with programming in a functional language.
+          This course has a flavour very different from typical mathematics courses, so open-mindedness and willingness to learn alien concepts is essential.</p>
+
+      </div>
+
+
+      <div class="section" id ="Assignments">
+        <h3> Assignments </h3>
+        {% assign sorted = (site.assignments | sort: 'date') | reverse %}
+
+        <ul>
+
+          {% for ass in sorted  %}
+          <li>
+            <a href="{{ site.baseurl }}{{ ass.url }}.html"> {{ ass.title }}</a>, due {{ ass.date | date_to_long_string }}.
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="section" id ="project">
+        <h3>Project</h3>
+        The project for this course will be to formally prove a body of mathematics in Homotopy Type Theory in the Lean theorem prover. This will be judged on the basis of
+        <ul>
+          <li><em>Uniqueness:</em> Credit for implementing proofs not in the lean HoTT library, and not implemented by other students.</li>
+          <li>Mathematical substance.</li>
+          <li>Use of HoTT concepts.</li>
+        </ul>
+      </div>
+
+      <div id="refs" class="section">
+        <h3> References</h3>
+        <ul>
+          <li><a href="http://homotopytypetheory.org/book/">Homotopy Type Theory: Univalent Foundations of Mathematics,</a> Institute for Advanced Studies, Princeton 2013.</li>
+          <li>Hatcher, A., Algebraic topology. Cambridge University Press, Cambridge, 2002.</li>
+          <li><a href="https://leanprover.github.io/theorem_proving_in_lean/index.html">Tutorial</a> for the Lean Theorem Prover.</li>
+          <li><a href="https://github.com/siddhartha-gadgil/ProvingGround">ProvingGround Repository</a>: Implementations in scala of large parts of HoTT.</li>
+        </ul>
+      </div>
+
+      <div id ="details" class="section">
+        <h3> Course Details</h3>
+        <ul>
+          <li><strong>Instructor:</strong> <a href="."> Siddhartha Gadgil</a></li>
+          <li><strong>E-mail:</strong> <em><a href="mailto:siddhartha.gadgil@gmail.com"> siddhartha.gadgil@gmail.com</a></em>
+          <li><strong>Timing: </strong> Monday, Wednesday, Friday 9:00 a.m. to 10:00 a.m.</li>
+          <li><strong>Venue: </strong> Lecture hall 5 (new wing), Department of Mathematics, IISc.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

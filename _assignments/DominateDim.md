@@ -1,6 +1,6 @@
 ---
 title: Domination and Levels
-date: 2014-04-04
+date: 2017-04-04
 ---
 
 For types $X$ and $Y$, define

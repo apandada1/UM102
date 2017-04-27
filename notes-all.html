@@ -1,0 +1,11 @@
+---
+title: Notes
+---
+
+{% for note in site.notes %}
+
+<h3><a href="{{ site.baseurl}}{{note.url}}">{{ note.title }} </a> </h3>
+
+{{ note.content }}
+
+{% endfor %}

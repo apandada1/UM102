@@ -6,8 +6,8 @@ title: Notes
 
 {% for note in sorted %}
 
-<h4><a href="{{ site.baseurl}}{{note.url}}">{{ note.title }} </a> </h4>
-<h5>Date: {{ note.date | date_to_long_string }}</h5>
+<h2><a href="{{ site.baseurl}}{{note.url}}">{{ note.title }} </a> </h2>
+<h3>Date: {{ note.date | date_to_long_string }}</h3>
 
 {{ note.content | truncatewords: 100 }}
 
